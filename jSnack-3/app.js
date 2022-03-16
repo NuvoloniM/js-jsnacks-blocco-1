@@ -11,10 +11,10 @@ let somma = document.getElementById('somma');
 for (let i = 0; i < 10; i++) {
     let x = parseInt(prompt('Inserisci un numero a piacere'))
     if (isNaN(x) == true || x=='') {
-        alert('Attenzione, i dati inseriti non sono validi')
+        alert('Attenzione, i dati inseriti non sono validi. Ricarica la pagina e riprova!');
     } else {
         sum += x;
     }
 }
 
-somma.innerHTML= `la somma dei numeri inseriti è ${sum}`
+somma.innerHTML= `la somma dei numeri inseriti è ${sum}.`
